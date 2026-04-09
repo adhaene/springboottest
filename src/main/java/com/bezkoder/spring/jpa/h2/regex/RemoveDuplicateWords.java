@@ -10,8 +10,8 @@ public class RemoveDuplicateWords {
 
         // Input sentence
         System.out.println("Enter a sentence:");
-        //String input = scanner.nextLine();
-        String input = "I love Love to To tO code";
+        String input = scanner.nextLine();
+        //String input = "I love Love to To tO code";
         scanner.close();
 
         // Regex to match repeated words (case-insensitive)

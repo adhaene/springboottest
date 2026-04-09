@@ -1,0 +1,7 @@
+
+Client	Blocking?	Recommended Use Case
+RestTemplate	✅ Yes	Legacy projects, quick synchronous calls
+WebClient	❌ No	Reactive, high-concurrency, streaming
+RestClient	✅ Yes	Modern synchronous API in Spring 6+
+
+
