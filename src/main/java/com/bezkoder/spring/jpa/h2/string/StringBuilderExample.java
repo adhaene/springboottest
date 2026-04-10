@@ -37,8 +37,10 @@ public class StringBuilderExample {
         // Delete characters at index
         sb.deleteCharAt(0);
 
+
         // Output final result
-        System.out.println("Final String: " + sb.toString());
+        System.out.println("Final String: " + sb);
+        System.out.println("Final String: " + sb.reverse());
         System.out.println("Capacity: " + sb.capacity());
     }
 }

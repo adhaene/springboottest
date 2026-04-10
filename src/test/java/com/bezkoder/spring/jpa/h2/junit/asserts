@@ -1,0 +1,18 @@
+Here’s a concise summary of the most common JUnit 5 assertions with a runnable example.
+In JUnit 5, assertions are static methods from org.junit.jupiter.api.Assertions.
+
+Common JUnit 5 Assertions
+Assertion	Purpose
+assertEquals(expected, actual)	Checks if two values are equal.
+assertNotEquals(unexpected, actual)	Checks if two values are not equal.
+assertTrue(condition)	Checks if a condition is true.
+assertFalse(condition)	Checks if a condition is false.
+assertNull(object)	Checks if an object is null.
+assertNotNull(object)	Checks if an object is not null.
+assertSame(expected, actual)	Checks if two references point to the same object.
+assertNotSame(unexpected, actual)	Checks if two references point to different objects.
+assertArrayEquals(expectedArray, actualArray)	Checks if two arrays are equal.
+assertIterableEquals(expectedIterable, actualIterable)	Checks if two iterables are equal.
+assertThrows(expectedException.class, executable)	Checks if code throws a specific exception.
+assertDoesNotThrow(executable)	Checks that code does not throw an exception.
+fail(message)	Fails a test with a custom message.

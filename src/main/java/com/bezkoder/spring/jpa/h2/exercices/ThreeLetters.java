@@ -8,7 +8,6 @@ class ThreeLetters {
     }
     public String solution(int A, int B) {
         StringBuilder sb = new StringBuilder();
-
         int a = A, b = B;
 
         while (a > 0 || b > 0) {
