@@ -1,0 +1,30 @@
+How This Implements CQRS
+Commands (CreateProductCommand, UpdateProductPriceCommand)
+→ Modify state via ProductCommandHandler.
+Queries (GetProductByIdQuery, GetAllProductsQuery)
+→ Read state via ProductQueryHandler.
+Separation: No query logic in command handlers and no state mutation in query handlers.
+Repository: Simple in-memory store for demo purposes.
+✅ Advantages of this approach:
+
+Clear separation of read and write logic.
+Easier scaling (e.g., separate read/write databases).
+Better maintainability for complex domains.
+
+
+The Command Query Responsibility Segregation (CQRS) pattern separates
+the responsibilities of handling commands (write operations)
+and queries (read operations).
+This approach improves scalability, maintainability,
+and flexibility in applications.
+Below is a simple Java implementation of the CQRS pattern.
+
+Benefits:
+
+Scalability: Command and query sides can scale independently.
+Optimized Performance: Separate models allow for tailored optimizations.
+Maintainability: Clear separation of concerns simplifies the codebase.
+
+Considerations:
+Complexity: Requires additional infrastructure for synchronization.
+Eventual Consistency: Query models may lag behind the latest state.
