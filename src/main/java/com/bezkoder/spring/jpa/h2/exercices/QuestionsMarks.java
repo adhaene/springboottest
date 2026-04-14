@@ -21,9 +21,7 @@ public class QuestionsMarks {
                     if(input.charAt(j) == '?') qCount++;
                     if(Character.isDigit(input.charAt(j))) {
                         int sum = Character.getNumericValue(input.charAt(i)) + Character.getNumericValue(input.charAt(j));
-                        if((sum == 10 && qCount == 3)){
-                            return "true";
-                        }
+                        if((sum == 10 && qCount == 3)) return "true";
                         i = j;
                         break;
                     }
