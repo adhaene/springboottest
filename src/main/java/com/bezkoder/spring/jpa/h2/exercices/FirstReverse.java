@@ -14,22 +14,34 @@ public class FirstReverse {
         System.out.println(run("I Love Code"));//edoC evoL I
     }
 
-    public static String run(String input) {
-        String[] split = input.split(" ");
-        for (int i = 0;i< split.length;i++){
-            System.out.println(split[i]);
-        }
+    public static String run(String str) {
+        String[] split = str.split(" ");
         StringBuilder result = new StringBuilder();
-        List<String> list = new ArrayList<>();
-        for (String word : split) {
-            StringBuilder sb = new StringBuilder().append(word).reverse();
-            list.add(sb.toString());
-        }
-        for (int i = list.size() -1;i>=0;i--){
-            result.append(list.get(i)).append(" ");
+
+        for (int i = split.length - 1; i >= 0; i--) {
+            result.append(new StringBuilder(split[i]).reverse());
+            if (i != 0) result.append(" ");
         }
 
         return result.toString();
     }
+
+//    public static String run(String input) {
+//        String[] split = input.split(" ");
+//        for (int i = 0;i< split.length;i++){
+//            System.out.println(split[i]);
+//        }
+//        StringBuilder result = new StringBuilder();
+//        List<String> list = new ArrayList<>();
+//        for (String word : split) {
+//            StringBuilder sb = new StringBuilder().append(word).reverse();
+//            list.add(sb.toString());
+//        }
+//        for (int i = list.size() -1;i>=0;i--){
+//            result.append(list.get(i)).append(" ");
+//        }
+//
+//        return result.toString();
+//    }
 
 }
