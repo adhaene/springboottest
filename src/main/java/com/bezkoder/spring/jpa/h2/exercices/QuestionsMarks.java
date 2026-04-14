@@ -33,31 +33,5 @@ public class QuestionsMarks {
             i++;
         }
         return "false";
-//        char[] arrayStr = input.toCharArray();
-//        int index1 = 0;
-//        int index2 = 1;
-//        boolean found = false;
-//        for(int i = 0;i<arrayStr.length;i++) {
-//            if(found){
-//                break;
-//            }
-//            if(Character.isDigit(arrayStr[i])){
-//                index1 =i;
-//                for(int j = i+1;j<arrayStr.length;j++){
-//                    if (Character.isDigit(arrayStr[j])) {
-//                        index2 =j;
-//                        if(Character.getNumericValue(arrayStr[i]) + Character.getNumericValue(arrayStr[j]) == 10){
-//                            found = true;
-//                            break;
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//
-//        if(found){
-//            System.out.println(index1  + " " + index2);
-//        }
-//        return "true";
     }
 }
