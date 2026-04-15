@@ -48,7 +48,7 @@ public class LinkedListExample {
         fruits.remove("Banana");
 
         // insert at index
-        fruits.add(12, "middle");
+        fruits.add(2, "middle");
 
         // Check if list contains an element
         if (fruits.contains("Cherry")) {

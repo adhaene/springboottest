@@ -17,8 +17,7 @@ public class CompareExample {
         personList.add(new Person("tert", 7));
         Collections.sort(personList);
         System.out.println(personList);
-
-        Comparator<Person> comparePersonByAge = Comparator.comparing(Person::age).reversed();
+        Comparator<Person> comparePersonByAge = Comparator.comparingInt(Person::age).reversed();
         Comparator<Person> comparePersonByName = Comparator.comparing(Person::name);
         Comparator<Person> comparePersonByAgeAndName = comparePersonByAge.thenComparing(comparePersonByName);
         List<Person> sortedPersons = personList.stream().sorted(comparePersonByAgeAndName).toList();
