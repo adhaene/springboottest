@@ -1,7 +1,8 @@
 package com.bezkoder.spring.jpa.h2.thread;
 
 /*
-A deadlock occurs when two or more threads are blocked forever, each waiting for a lock held by another thread.
+A deadlock occurs when two or more threads are blocked forever,
+ each waiting for a lock held by another thread.
  Necessary conditions:
 
 Mutual Exclusion – Only one thread can hold a resource.
