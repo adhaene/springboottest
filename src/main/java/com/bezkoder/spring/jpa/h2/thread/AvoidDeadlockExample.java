@@ -24,7 +24,8 @@ that allow specifying a timeout for acquiring locks.
 If the lock cannot be acquired within the timeout,
 the thread can proceed with alternative logic.
 
-Lock-Free Data Structures: Where possible, use concurrent collections like ConcurrentHashMap or ConcurrentLinkedQueue that are designed to handle multithreading without explicit locking.
+Lock-Free Data Structures: Where possible, use concurrent collections like ConcurrentHashMap or ConcurrentLinkedQueue
+ that are designed to handle multithreading without explicit locking.
 
  */
 class Resource {
