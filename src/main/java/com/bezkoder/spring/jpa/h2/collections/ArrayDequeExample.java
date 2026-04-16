@@ -3,6 +3,13 @@ package com.bezkoder.spring.jpa.h2.collections;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/*
+Key Methods:
+
+Add/Remove at head: addFirst(), removeFirst(), offerFirst(), pollFirst(), push(), pop()
+Add/Remove at tail: addLast(), removeLast(), offerLast(), pollLast()
+Peek: peekFirst(), peekLast()
+ */
 public class ArrayDequeExample {
     public static void main(String[] args) {
         // Create an ArrayDeque of Strings
