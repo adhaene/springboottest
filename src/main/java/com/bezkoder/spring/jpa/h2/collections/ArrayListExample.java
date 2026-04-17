@@ -17,6 +17,9 @@ public class ArrayListExample {
         fruits.add(1, "Mango");
 
         // Display all elements
+        System.out.println("Index of Apple: " + fruits.indexOf("Apple"));
+
+        // Display all elements
         System.out.println("Fruits List: " + fruits);
 
         // Access element
